@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+            <title>{{title}} - work logger</title>
+        {% else %}
+            <title>Work logger</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Work logger: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
